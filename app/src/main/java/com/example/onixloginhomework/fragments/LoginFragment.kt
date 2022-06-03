@@ -22,27 +22,24 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
     }
 
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
 
-
-    override fun onResume() {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
         binding.accept.setOnClickListener {
-            val password1: String = binding.editText1.text.toString()
-            val password2: String = binding.editText2.text.toString()
+            val password: String = binding.editText1.text.toString()
+            val passwordRepeat: String = binding.editText2.text.toString()
             val login: String = binding.editText.text.toString()
             if (login.matches(".*[A-z].*".toRegex())) {
-                if (password1.length < 8) {
-                    binding.password.text = "Мінімальна довжина пароля 8 символів"
-                } else if (!password1.matches(".*[A-Z].*".toRegex())) {
-                    binding.password.text = "Пароль повинен містити 1 великий символ"
-                } else if (!password1.matches(".*[a-z].*".toRegex())) {
-                    binding.password.text = "Пароль повинен містити 1 маленький символ"
-                } else if (!password1.matches(".*[0-9].*".toRegex())) {
-                    binding.password.text = "Пароль повинен містити 1 цифру"
-                } else if (password2 != password1) {
-                    binding.password.text = "Паролі не співпадають"
+                if (password.length < 8) {
+                    binding.Error.setText(R.string.password_length_error)
+                } else if (!password.matches(".*[A-Z].*".toRegex())) {
+                    binding.Error.setText(R.string.password_error)
+                } else if (!password.matches(".*[a-z].*".toRegex())) {
+                    binding.Error.setText(R.string.password_error)
+                } else if (!password.matches(".*[0-9].*".toRegex())) {
+                    binding.Error.setText(R.string.password_letter_error)
+                } else if (passwordRepeat != password) {
+                    binding.Error.setText(R.string.password_login_error_repeat)
                 } else {
                     if (login.length < 15) {
                         findNavController().navigate(
@@ -51,15 +48,13 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
                             )
                         )
                     } else {
-                        binding.password.text = "Логін завеликий"
+                        binding.Error.setText(R.string.password_login_error_large)
                     }
                 }
             } else {
-                binding.password.text = "Логін повинен містити 1 великий або малий символ"
+                binding.Error.setText(R.string.password_login_error_empty)
             }
+
         }
-
-
-        super.onResume()
     }
 }
