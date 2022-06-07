@@ -10,9 +10,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
-        android:text="Реєстрація"
+        android:text="@string/label_registration"
         android:textColor="@color/white"
-        android:textSize="25dp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,14 +25,16 @@
         android:layout_marginStart="100dp"
         android:layout_marginTop="150dp"
         android:layout_marginEnd="100dp"
-        android:hint="Введіть логін"
+        android:hint="@string/label_login"
         android:gravity="center"
         android:singleLine="true"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints=""
+        android:inputType="" />
 
 
     <EditText
@@ -42,14 +44,15 @@
         android:layout_marginStart="100dp"
         android:layout_marginTop="200dp"
         android:layout_marginEnd="100dp"
-        android:hint="Пароль"
-        android:inputType="text"
+        android:hint="@string/label_password"
+        android:inputType="textPassword"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         android:maxLines="1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="" />
 
 
     <EditText
@@ -59,15 +62,16 @@
         android:layout_marginStart="100dp"
         android:layout_marginTop="250dp"
         android:layout_marginEnd="100dp"
-        android:hint="Пароль ще раз"
+        android:hint="@string/label_password_repeat"
         android:maxLines="1"
-        android:inputType="text"
+        android:inputType="textPassword"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/accept"
@@ -76,17 +80,17 @@
         android:layout_marginStart="100dp"
         android:layout_marginEnd="100dp"
         android:layout_marginBottom="64dp"
-        android:text="Вхід"
-        android:background="@color/gachi_111"
+        android:text="@string/label_login"
+        android:background="@color/transparent"
         android:textAppearance="@style/TextAppearance.AppCompat.Display3"
-        android:textSize="23dp"
+        android:textSize="23sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         />
 
     <TextView
-        android:id="@+id/password"
+        android:id="@+id/Error"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="250dp"

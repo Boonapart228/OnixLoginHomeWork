@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">OnixLoginHomeWork</string>
+
+    <string name="password_error"> The password must contain one letter A-Z and a-z.</string>
+    <string name="password_length_error"> The minimum password length is 8 characters. </string>
+    <string name="password_letter_error"> Password must contain one letter. </string>
+    <string name="password_login_error_empty">login must contain A-z.</string>
+    <string name="password_login_error_large">The login is too big.</string>
+    <string name="password_login_error_repeat">Passwords do not match.</string>
+
+    <string name="label_login">Login</string>
+    <string name="label_password">Password</string>
+    <string name="label_password_repeat">Password repeat</string>
+    <string name="label_registration">Registration</string>
+
+    <string name="hello">Hello!</string>
+    <string name="registered">You registered in</string>
+
+
 </resources>
