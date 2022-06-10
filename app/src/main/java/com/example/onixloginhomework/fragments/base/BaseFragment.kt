@@ -36,4 +36,7 @@ abstract class BaseFragment<T : ViewDataBinding>(
     protected open fun setObservers() {}
 
     protected fun navigate(direction: NavDirections) = findNavController().navigate(direction)
+    protected fun back(){
+        findNavController().popBackStack()
+    }
 }

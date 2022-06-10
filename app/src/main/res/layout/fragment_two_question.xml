@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.onixloginhomework.fragments.questiontest.two.QuestionTwoTestViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewFour"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_question_two_title_one"
+                    android:textSize="@dimen/text_30"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:id="@+id/imageViewSeven"
+                    android:layout_width="@dimen/dimen_300"
+                    android:layout_height="@dimen/dimen_300"
+                    tools:src="@tools:sample/avatars" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroupOne"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:onClick="@{() -> viewModel.onAnswerFalseRadioOne()}"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_question_two_answer_one_title_one"
+                        android:textSize="@dimen/text_20"/>
+
+                    <RadioButton
+                        android:onClick="@{() -> viewModel.onAnswerFalseRadioOne()}"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_question_two_answer_two_title_one"
+                        android:textSize="@dimen/text_20"/>
+
+                    <RadioButton
+                        android:onClick="@{() -> viewModel.onAnswerTrueRadioOne()}"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_question_two_answer_three_title_one"
+                        android:textSize="@dimen/text_20"/>
+
+                    <RadioButton
+                        android:onClick="@{() -> viewModel.onAnswerFalseRadioOne()}"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_question_two_answer_four_title_one"
+                        android:textSize="@dimen/text_20"/>
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textViewFive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_question_two_title_two"
+                    android:textSize="@dimen/text_30"
+                    android:textColor="@color/black"/>
+
+
+                <RadioGroup
+                    android:id="@+id/radioGroupThree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:onClick="@{() -> viewModel.onAnswerTrueRadioTwo()}"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_question_two_answer_one_title_two"
+                        android:textSize="@dimen/text_20"/>
+
+                    <RadioButton
+                        android:onClick="@{() -> viewModel.onAnswerFalseRadioTwo()}"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_question_two_answer_two_title_two"
+                        android:textSize="@dimen/text_20"/>
+
+                    <RadioButton
+                        android:onClick="@{() -> viewModel.onAnswerFalseRadioTwo()}"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_question_two_answer_three_title_two"
+                        android:textSize="@dimen/text_20"/>
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textViewSix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_question_two_title_three"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:gravity="center"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textSize="@dimen/text_20"
+                    android:textColor="@color/black"/>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <CheckBox
+                            android:onCheckedChanged="@{(view,checked) -> viewModel.onAnswerCheckNine(checked)}"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+                            android:id="@+id/imageViewTwoOne"
+                            android:layout_width="@dimen/dimen_300"
+                            android:layout_height="@dimen/dimen_150"
+                            tools:src="@tools:sample/avatars" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <CheckBox
+                            android:onCheckedChanged="@{(view,checked) -> viewModel.onAnswerCheckTen(checked)}"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+                            android:id="@+id/imageViewTwoTwo"
+                            android:layout_width="@dimen/dimen_300"
+                            android:layout_height="@dimen/dimen_150"
+                            tools:src="@tools:sample/avatars" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <CheckBox
+                            android:onCheckedChanged="@{(view,checked) -> viewModel.onAnswerCheckEleven(checked)}"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+                            android:id="@+id/imageViewTwoThree"
+                            android:layout_width="@dimen/dimen_300"
+                            android:layout_height="@dimen/dimen_150"
+                            tools:src="@tools:sample/avatars" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <CheckBox
+                            android:onCheckedChanged="@{(view,checked) -> viewModel.onAnswerCheckTwelve(checked)}"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+                            android:id="@+id/imageViewTwoFour"
+                            android:layout_width="@dimen/dimen_300"
+                            android:layout_height="@dimen/dimen_150"
+                            tools:src="@tools:sample/avatars" />
+                    </LinearLayout>
+                </RadioGroup>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start">
+                    <Button
+                        android:id="@+id/buttonBackOne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:onClick="@{() -> viewModel.onBackClick()}"
+                        android:text="@string/back" />
+                    <Button
+                        android:id="@+id/buttonNextTwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="@{() -> viewModel.onNextClick()}"
+                        android:layout_marginStart="@dimen/dimen_100"
+                        android:text="@string/next" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
