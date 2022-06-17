@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.onixloginhomework.fragments.questiontest.one.QuestionOneTestViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewOne"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_question_one_title_one"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_30" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroupOne"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:onClick="@{() -> viewModel.onAnswerTrueRadio()}"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_question_one_answer_one_title_one"
+                        android:textSize="@dimen/text_20" />
+
+                    <RadioButton
+                        android:onClick="@{() -> viewModel.onAnswerFalseRadio()}"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_question_one_answer_two_title_one"
+                        android:textSize="@dimen/text_20" />
+
+                    <RadioButton
+                        android:onClick="@{() -> viewModel.onAnswerFalseRadio()}"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_question_one_answer_three_title_one"
+                        android:textSize="@dimen/text_20" />
+
+                    <RadioButton
+                        android:onClick="@{() -> viewModel.onAnswerFalseRadio()}"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_question_one_answer_four_title_one"
+                        android:textSize="@dimen/text_20" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textViewTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_question_one_title_two"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_30" />
+
+                <ImageView
+                    android:id="@+id/imageViewTwo"
+                    android:layout_width="@dimen/dimen_220"
+                    android:layout_height="@dimen/dimen_220"
+                    tools:src="@tools:sample/avatars" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroupTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                       android:onCheckedChanged="@{(view,checked) -> viewModel.onAnswerCheckOne(checked)}"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_question_one_answer_one_title_two"
+                        android:textSize="@dimen/text_20" />
+
+                    <CheckBox
+                        android:onCheckedChanged="@{(view,checked) -> viewModel.onAnswerCheckTwo(checked)}"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_question_one_answer_two_title_two"
+                        android:textSize="@dimen/text_20" />
+
+                    <CheckBox
+                        android:onCheckedChanged="@{(view,checked) -> viewModel.onAnswerCheckThree(checked)}"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_question_one_answer_three_title_two"
+                        android:textSize="@dimen/text_20" />
+
+                    <CheckBox
+                        android:onCheckedChanged="@{(view,checked) -> viewModel.onAnswerCheckFour(checked)}"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fragment_question_one_answer_four_title_two"
+                        android:textSize="@dimen/text_20" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textViewThree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_question_one_title_three"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_30"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <CheckBox
+                            android:onCheckedChanged="@{(view,checked) -> viewModel.onAnswerCheckFive(checked)}"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+
+                            android:id="@+id/imageViewOneOne"
+                            android:layout_width="@dimen/dimen_300"
+                            android:layout_height="@dimen/dimen_150"
+                            tools:src="@tools:sample/avatars" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <CheckBox
+                            android:onCheckedChanged="@{(view,checked) -> viewModel.onAnswerCheckSix(checked)}"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+                            android:id="@+id/imageViewOneTwo"
+                            android:layout_width="@dimen/dimen_300"
+                            android:layout_height="@dimen/dimen_150"
+                            tools:src="@tools:sample/avatars" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <CheckBox
+                            android:onCheckedChanged="@{(view,checked) -> viewModel.onAnswerCheckSeven(checked)}"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+                            android:id="@+id/imageViewOneThree"
+                            android:layout_width="@dimen/dimen_300"
+                            android:layout_height="@dimen/dimen_150"
+                            tools:src="@tools:sample/avatars" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <CheckBox
+                            android:onCheckedChanged="@{(view,checked) -> viewModel.onAnswerCheckEight(checked)}"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <ImageView
+                            android:id="@+id/imageViewOneFour"
+                            android:layout_width="@dimen/dimen_300"
+                            android:layout_height="@dimen/dimen_150"
+                            tools:src="@tools:sample/avatars" />
+
+                    </LinearLayout>
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+                    <Button
+                        android:id="@+id/buttonNextOne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="@{() -> viewModel.onNextClick()}"
+                        android:text="@string/next" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
