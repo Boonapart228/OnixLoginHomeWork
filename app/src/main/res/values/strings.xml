@@ -5,45 +5,13 @@
 
     <string name="loading">Loading</string>
     
-    <string name="fragment_question_one_title_one">What is a fireball</string>
-    <string name="fragment_question_one_answer_one_title_one">Cast</string>
-    <string name="fragment_question_one_answer_two_title_one">Buff</string>
-    <string name="fragment_question_one_answer_three_title_one">Disable</string>
-    <string name="fragment_question_one_answer_four_title_one">DeBuff</string>
-
-    <string name="fragment_question_one_title_two">How long is hex</string>
-    <string name="fragment_question_one_answer_one_title_two">1 minute</string>
-    <string name="fragment_question_one_answer_two_title_two">10 seconds</string>
-    <string name="fragment_question_one_answer_three_title_two">25 seconds</string>
-    <string name="fragment_question_one_answer_four_title_two">15 seconds</string>
-
-    <string name="fragment_question_one_title_three">What races in the horde</string>
-
-
-    <string name="fragment_question_two_title_one">The capital of the Alliance</string>
-    <string name="fragment_question_two_answer_one_title_one">Durotar</string>
-    <string name="fragment_question_two_answer_two_title_one">Orgrimmar</string>
-    <string name="fragment_question_two_answer_three_title_one">Stormwind</string>
-    <string name="fragment_question_two_answer_four_title_one">Necropolis</string>
-
-    <string name="fragment_question_two_title_two">Abbreviation WoW</string>
-    <string name="fragment_question_two_answer_one_title_two">World of Warcraft</string>
-    <string name="fragment_question_two_answer_two_title_two">World of Warships</string>
-    <string name="fragment_question_two_answer_three_title_two">World of Worms</string>
-
-    <string name="fragment_question_three_answer_one_title_one">Turtle with a sword</string>
-    <string name="fragment_question_three_answer_two_title_one">A man with a sword</string>
-    <string name="fragment_question_three_answer_three_title_one">Lion with sword</string>
-    <string name="fragment_question_two_title_three">What are the riding animals of the Alliance</string>
-    <string name="fragment_question_three_title_one">What is on the coat of arms of the alliance?</string>
-    <string name="fragment_question_three_title_two">What is the name of the planet in World of Warcraft</string>
-    <string name="fragment_question_three_title_three">What kind of class is this in the World of Warcraft</string>
 
 
     <string name="input_answer">Input Answer</string>
-    <string name="next">NEXT</string>
-    <string name="back">BACK</string>
-    <string name="confirm_answer">Confirm Answer</string>
+    <string name="turn_first_player">Turn First Player</string>
+    <string name="start">Start</string>
+    <string name="X">X</string>
+    <string name="O">O</string>
 
 
 </resources>
