@@ -2,16 +2,7 @@
 <resources>
     <string name="app_name">OnixLoginHomeWork</string>
     <string name="WoW_name">WoW</string>
-
     <string name="loading">Loading</string>
-    
-
-
-    <string name="input_answer">Input Answer</string>
-    <string name="turn_first_player">Turn First Player</string>
-    <string name="start">Start</string>
-    <string name="X">X</string>
-    <string name="O">O</string>
 
 
 </resources>

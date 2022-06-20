@@ -8,27 +8,5 @@
         android:id="@+id/splashFragment"
         android:name="com.example.onixloginhomework.fragments.splash.SplashFragment"
         android:label="SplashFragment"
-        tools:layout="@layout/fragment_splash">
-        <action
-            android:id="@+id/action_splashFragment_to_settingsFragment"
-            app:destination="@id/settingsFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/settingsFragment"
-        android:name="com.example.onixloginhomework.settings.SettingsFragment"
-        android:label="SettingsFragment"
-        tools:layout="@layout/settings_fragment">
-        <action
-            android:id="@+id/action_settingsFragment_to_boardFragment"
-            app:destination="@id/boardFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/boardFragment"
-        android:name="com.example.onixloginhomework.board.BoardFragment"
-        android:label="BoardFragment"
-        tools:layout="@layout/board_fragment">
-        <argument
-            android:name="choice"
-            app:argType="integer" />
-    </fragment>
+        tools:layout="@layout/fragment_splash"/>
 </navigation>
