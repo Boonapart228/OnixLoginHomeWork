@@ -3,6 +3,7 @@
     <string name="app_name">OnixLoginHomeWork</string>
     <string name="WoW_name">WoW</string>
     <string name="loading">Loading</string>
-
+    <string name="network_name">Network name %s</string>
+    <string name="network_score">Network score %s</string>
 
 </resources>
