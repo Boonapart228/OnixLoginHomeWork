@@ -1,5 +1,6 @@
 package com.example.onixloginhomework.fragments.search
 
+import android.graphics.Color
 import android.os.Bundle
 import android.view.View
 import android.widget.TextView
@@ -44,6 +45,7 @@ class SearchFragment :
                 params.circleAngle = data[it].angle
                 params.circleRadius = data[it].radius * 4
                 textView.textSize = 20f
+                textView.background = requireContext().resources.getDrawable(R.drawable.circle, null)
                 textView.layoutParams = params
                 textView.setOnClickListener{_ ->
                     val action = SearchFragmentDirections.actionSearchFragmentToInfoFragment(data[it].scanResult)
