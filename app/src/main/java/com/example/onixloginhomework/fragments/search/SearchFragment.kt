@@ -38,7 +38,7 @@ class SearchFragment :
 
             repeat(data.size) {
                 val textView = TextView(context)
-                textView.text = data[it].short.substring(0, 4)
+                textView.text = data[it].short.substring(0, 2)
                 constraintLayout.addView(textView)
                 val params = textView.layoutParams as ConstraintLayout.LayoutParams
                 params.circleConstraint = R.id.getWifi
