@@ -36,7 +36,7 @@ class SplashFragment :
             }
 
             override fun onAnimationEnd(animation: Animator?) {
-                findNavController().navigate(R.id.action_splashFragment_to_searchFragment)
+             
 
             }
 
